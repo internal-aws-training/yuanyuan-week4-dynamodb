@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "Batch write items to table ${TABLE_NAME}"
+
+# BatchWriteItem  cannot  update  items.  To  update  items,  use  the UpdateItem action.
+# BatchWriteItem can perform for both put items and delete items
+aws dynamodb batch-write-item \
+    --request-items file://aws-cli/item/config/request-put-items.json

@@ -1,0 +1,9 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "List tables"
+aws dynamodb describe-limits
+ 

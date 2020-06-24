@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "Put item to table ${TABLE_NAME} "
+
+aws dynamodb put-item \
+--table-name ${TABLE_NAME}  \
+--item \
+    '{"projectName": {"S": "Project A"}, "projectType": {"S": "Java"}, "memberName": {"S": "Member 01"}, "startTime": {"S": "2012-6-8"}}'

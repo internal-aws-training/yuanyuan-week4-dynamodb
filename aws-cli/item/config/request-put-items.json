@@ -1,0 +1,95 @@
+{
+  "Project_Yuanyuan": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project A"},
+                    "projectType": {"S": "Javascript"},
+                    "memberName": {"S": "Member 02"},
+                    "startTime": {"S": "2020-6-7"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project A"},
+                    "projectType": {"S": "Python"},
+                    "memberName": {"S": "Member 03"},
+                    "startTime": {"S": "2020-6-1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project A"},
+                    "projectType": {"S": "C#"},
+                    "memberName": {"S": "Member 04"},
+                    "startTime": {"S": "2020-6-2"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project B"},
+                    "projectType": {"S": "Java"},
+                    "memberName": {"S": "Member 01"},
+                    "startTime": {"S": "2020-6-8"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project B"},
+                    "projectType": {"S": "Javascript"},
+                    "memberName": {"S": "Member 02"},
+                    "startTime": {"S": "2020-6-7"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project B"},
+                    "projectType": {"S": "Python"},
+                    "memberName": {"S": "Member 03"},
+                    "startTime": {"S": "2020-6-1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project B"},
+                    "projectType": {"S": "C#"},
+                    "memberName": {"S": "Member 04"},
+                    "startTime": {"S": "2020-6-2"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project C"},
+                    "projectType": {"S": "Java"},
+                    "memberName": {"S": "Member 01"},
+                    "startTime": {"S": "2020-6-8"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "projectName": {"S": "Project C"},
+                    "projectType": {"S": "Javascript"},
+                    "memberName": {"S": "Member 02"},
+                    "startTime": {"S": "2020-6-7"}
+                }
+            }
+        }
+        
+    ]
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "Delete table: ${TABLE_NAME}"
+aws dynamodb delete-table \
+    --table-name ${TABLE_NAME}
+ 
