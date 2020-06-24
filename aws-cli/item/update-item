@@ -1,0 +1,14 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "Update items in table ${TABLE_NAME} "
+
+aws dynamodb update-item \
+  --table-name ${TABLE_NAME} \
+  --key '{ "projectName": {"S": "Project A"}, "projectType": {"S": "Java"}}' \
+  --update-expression "SET memberName = :newval" \
+  --expression-attribute-values '{":newval":{"S":"Updated Member 01"}}' \
+  --return-values ALL_NEW

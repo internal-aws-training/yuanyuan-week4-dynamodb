@@ -1,4 +1,4 @@
-# Practice 1 - AWS CLI
+# 1 - Practice with AWS CLI
 
 ### 1. 创建Table: Project_Yuanyuan, 分区键(KeyType为HASH)为projectName, 排序键(KeyType为Range)为projectType
 ```
@@ -18,32 +18,32 @@
 
 ### 4. 更新数据: 
 ```
-
+/aws-cli/item/update-item   
 ```
 
 ### 5. 读取数据: 根据主键读取数据
 ```
-
+./aws-cli/item/get-item
 ```
 
-### 6. 查询数据: 根据分区键和排序键查询数据, 通过memberName查询数据
+### 6. 查询数据: 根据分区键查询数据
 ```
-
+./aws-cli/item/query-data 
 ```
 
 ### 7. 扫描数据: 全表扫描, 根据memberName过滤数据
 ```
-
+./aws-cli/item/scan-data
 ```
 
 ### 8. 创建GSI: 对memberName创建全局二级索引
 ```
-
+./aws-cli/table/create-GSI
 ```
 
 ### 9. 查询GSI: 根据memberName查询数据
 ```
-
+./aws-cli/item/query-data-with-GSI
 ```
 
 ### 10. 删除表: 

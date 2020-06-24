@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "Get item in table ${TABLE_NAME} "
+
+aws dynamodb get-item \
+  --table-name ${TABLE_NAME} \
+  --key '{ "projectName": {"S": "Project A"}, "projectType": {"S": "Java"}}' 
+  

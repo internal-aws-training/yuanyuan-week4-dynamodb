@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "Scan data with memberName in table ${TABLE_NAME} "
+
+aws dynamodb scan \
+  --table-name ${TABLE_NAME} \
+  --filter-expression "memberName = :name" \
+  --expression-attribute-values '{":name":{"S":"Member 01"}}'

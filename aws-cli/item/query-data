@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+cd $(dirname $0)/../..
+
+source ./aws-cli/set-env
+
+display_status "Query data with Hash Key [${HASH_KEY}] in table ${TABLE_NAME} "
+
+aws dynamodb query \
+  --table-name ${TABLE_NAME} \
+  --key-condition-expression "${HASH_KEY} = :name" \
+  --expression-attribute-values  '{":name":{"S":"Project A"}}'
