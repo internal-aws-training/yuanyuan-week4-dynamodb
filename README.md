@@ -113,3 +113,14 @@ D. array  \
 
 - DynamoDB 中的每个表具有 20 个全局二级索引（默认限制）和 5 个本地二级索引的限制。
 - 一般来说，应使用全局二级索引而不是本地二级索引。例外情况是当在查询结果中需要强一致性时，在这种情况下，本地二级索引可提供强一致性但全局二级索引无法提供 (全局二级索引查询仅支持最终一致性)。
+
+
+# Part 3 - Coding
+
+src/clients/DynamodbClient.js 
+src/services/ProjectService.js
+
+Testing
+```
+node ./index.local.test.js
+```

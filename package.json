@@ -1,0 +1,21 @@
+{
+  "name": "yuanyuan-week4-dynamodb",
+  "version": "1.0.0",
+  "description": "### 1. 创建Table: Project_Yuanyuan, 分区键(KeyType为HASH)为projectName, 排序键(KeyType为Range)为projectType ``` ./aws-cli/table/create-table ```",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/internal-aws-training/yuanyuan-week4-dynamodb.git"
+  },
+  "author": "yuanyuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/internal-aws-training/yuanyuan-week4-dynamodb/issues"
+  },
+  "homepage": "https://github.com/internal-aws-training/yuanyuan-week4-dynamodb#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.703.0",
+    "eslint": "^7.0.0"
+  }
+}
