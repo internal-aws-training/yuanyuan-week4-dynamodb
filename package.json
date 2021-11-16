@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/internal-aws-training/yuanyuan-week4-dynamodb#readme",
   "devDependencies": {
-    "aws-sdk": "^2.703.0",
+    "aws-sdk": "^2.814.0",
     "eslint": "^7.0.0"
   }
 }
